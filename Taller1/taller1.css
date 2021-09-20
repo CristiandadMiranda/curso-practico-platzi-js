@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 4.5rem;
+    align-content: center;
+    text-align: center;
+    color: cadetblue;
+    outline: 2px solid darkcyan ;
+}
+
+.header_parrafo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 450;
+}
+
+/* STYLE DE EL CONTAINER DE CUADRADO */
+
+.cuadrado {
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid darkcyan ; */
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50%;
+}
+
+.cuadrado_subtitle {
+    color: cadetblue;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.container {
+    outline:2px solid rgb(24, 24, 99);
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items:center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 350px;
+}
+
+.container_form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container_form label {
+    color: cadetblue;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 80%;
+    height: 15px;
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 20px;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+::placeholder{
+    color: transparent;
+    font-weight: bold;
+
+}
+
+.button {
+    cursor: pointer;
+    color: cadetblue;
+    background-color: rgba(0, 0, 0, 0.11);
+    outline: none;
+    border: 2px solid cyan;
+    border-radius: 25px;
+    width: 150px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+/* STYLE DE EL CONTAINER DE EL TRIAGULO */
+
+.triangulo {
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid darkcyan ; */
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+
+.triangulo_subtitle {
+    color: cadetblue;
+    margin-bottom:20px;
+}
+
+
+/* STYLE DE EL CONTAINER DE EL CIRCULO */
+
+.circulo {
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid darkcyan ; */
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50%;
+}
+
+.circulo_subtitle {
+    color: cadetblue;
+    margin-bottom:20px;
+}

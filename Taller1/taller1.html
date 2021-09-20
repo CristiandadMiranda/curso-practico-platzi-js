@@ -8,31 +8,131 @@
     <link rel="stylesheet" href="/Frontend/curso-practico-platzi-js/Taller1/taller1.css">
 </head>
 <body>
-    <header>
-        <p>Este es el primer taller de nuestro curso practico de java script</p>
+    
+    <header class="header">
+       
+        <h1 class="header_tiulo">Figuras Geometricas</h1>
+        <p class="header_parrafo">Este es el primer taller de nuestro curso practico de java script</p>
+    
     </header>
-    <section>
-        <h2>Calcula el perimetro y el área de un cuadrado</h2>
+   
 
-        <form action="">
+<section class="section"> 
 
-            <label for="inputCuadrado">
-                Escribe cuanto miden los lados de tu cuadrado:
-            </label>
 
-            <input id="inputCuadrado" type="number"/>
+    <section class="cuadrado">
+        <h2 class="cuadrado_subtitle">Calcula el perimetro y el área de un cuadrado</h2>
+        
+        <section class="container">
+            <form class="container_form">
+               
+                <!-- <div class="form_input">  -->
+               
+                    <label for="inputCuadrado">
+                        Escribe cuanto miden los lados de tu cuadrado:
+                    </label>
 
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular Perimetro
-            </button>
+                     <input class="input" id="inputCuadrado" type="number"/>
 
-            <button type="button" onclick="calcularAreaCuadrada()">
-                Calcular area
-            </button>
+                <!-- </div> -->
+
+                <!-- <div class="form_button"> -->
+                    
+                    <button class="button" type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular Perimetro
+                    </button>
+
+                    <button class="button" type="button" onclick="calcularAreaCuadrado()">
+                        Calcular área
+                    </button>
+
+                <!-- </div> -->
         </form>
 
+         </section>
+
+
     </section>
+
+
+    <section class="circulo">
+        <h2 class="circulo_subtitle">Calcula el perimetro y el área de un circulo</h2>
+        
+        <section class="container">
+            <form class="container_form">
+               
+                <!-- <div class="form_input">  -->
+               
+                    <label for="inputCirculo">
+                        Escribe cuanto miden los lados de tu cuadrado:
+                    </label>
+    
+                     <input class="input" id="inputCirculo" type="number"/>
+    
+                <!-- </div> -->
+    
+                <!-- <div class="form_button"> -->
+                    
+                    <button class="button" type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular Perimetro
+                    </button>
+    
+                    <button class="button" type="button" onclick="calcularAreaCirculo()">
+                        Calcular área
+                    </button>
+    
+                <!-- </div> -->
+        </form>
+    
+         </section>
+    
+    
+    </section>
+
+
+
+</section>
+
+
+
+<section class="triangulo">
+    <h2 class="triangulo_subtitle">Calcula el perimetro y el área de un triangulo</h2>
+    
+    <section class="container">
+        <form class="container_form">
+           
+            <!-- <div class="form_input">  -->
+           
+                <label for="inputTriangulo">
+                    Escribe cuanto miden los lados de tu cuadrado:
+                </label>
+
+                 <input class="input" id="inputlado" type="number" placeholder="Lados iguales"/>
+                 <input class="input" id="inputbase" type="number" placeholder="Base"/>
+
+            <!-- </div> -->
+
+            <!-- <div class="form_button"> -->
+                
+                <button class="button" type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular Perimetro
+                </button>
+
+                <button class="button" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular área
+                </button>
+
+            <!-- </div> -->
+    </form>
+
+     </section>
+
+
+</section>
+
+
     
     <script src="/Frontend/curso-practico-platzi-js/Taller1/taller1.js"></script>
 </body>
 </html>
+<!-- https://www.neurochispas.com/wiki/altura-del-triangulo-isosceles/ -->
