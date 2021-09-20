@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="/Frontend/curso-practico-platzi-js/Taller1/taller1.css">
 </head>
 <body>
+    <header>
+        <p>Este es el primer taller de nuestro curso practico de java script</p>
+    </header>
+    <section>
+        <h2>Calcula el perimetro y el área de un cuadrado</h2>
 
-    <h1>
-        Figuras Geométricas
-    </h1>
+        <form action="">
+
+            <label for="inputCuadrado">
+                Escribe cuanto miden los lados de tu cuadrado:
+            </label>
+
+            <input id="inputCuadrado" type="number"/>
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular Perimetro
+            </button>
+
+            <button type="button" onclick="calcularAreaCuadrada()">
+                Calcular area
+            </button>
+        </form>
+
+    </section>
     
     <script src="/Frontend/curso-practico-platzi-js/Taller1/taller1.js"></script>
 </body>
