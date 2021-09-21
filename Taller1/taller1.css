@@ -25,7 +25,7 @@ body {
 .section {
     display: flex;
     align-items: center;
-    height: 450;
+    height: inherit;
 }
 
 /* STYLE DE EL CONTAINER DE CUADRADO */
@@ -47,10 +47,10 @@ body {
 }
 
 .container {
-    outline:2px solid rgb(24, 24, 99);
+    /* outline:2px solid rgb(24, 24, 99); */
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 200px;
     align-items:center;
     font-size: 16px;
     font-weight: bold;
@@ -83,7 +83,7 @@ body {
 }
 
 ::placeholder{
-    color: transparent;
+    color: black;
     font-weight: bold;
 
 }
