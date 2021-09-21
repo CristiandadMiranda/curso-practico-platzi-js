@@ -36,7 +36,7 @@ function perimetroTriangulo (lado1, lado2, base) {
 perimetroTriangulo();
 
 function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
-    
+
     if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
         console.error("Los lados a y b no son iguales");
     } else {
@@ -168,6 +168,27 @@ function calcularAreaCirculo(){
 
     }
 
+    // function calcularAreaTriangulo(){
+    //     const inputLado1 = document.getElementById("inputLado1");
+    //     const inputLado2 = document.getElementById("inputLado2");
+    //     const inputBase = document.getElementById("inputBase");
+    //     const valueLado1 = inputLado1.value;
+    //     const valueLado2 = inputLado2.value;
+    //     const valueBase = inputBase.value;
+        
+    //     if (valueLado1 != valueLado2 && valueLado1 === valueBase){
+    //         alert("No es un triangulo isoceles");
+
+    //     } else {
+            
+    //         const  altura =  alturaTrianguloIsosceles(valueLado1,valueLado2, valueBase);
+    //         const area = areaTriangulo(valueBase, altura);
+    //         alert(area);
+
+    //     }
+
+    // }
+
     function calcularAreaTriangulo(){
         const inputLado1 = document.getElementById("inputLado1");
         const inputLado2 = document.getElementById("inputLado2");
@@ -176,17 +197,18 @@ function calcularAreaCirculo(){
         const valueLado2 = inputLado2.value;
         const valueBase = inputBase.value;
         
-        if (valueLado1 != valueLado2 && valueLado1 === valueBase){
-            alert("No es un triangulo isoceles");
-
-        } else {
+        if (valueLado1 === valueLado2 && valueLado1 != valueBase){
             
             const  altura =  alturaTrianguloIsosceles(valueLado1,valueLado2, valueBase);
             const area = areaTriangulo(valueBase, altura);
             alert(area);
 
+        } else {
+            
+            console.error("error");
+
         }
 
     }
 
-    
+
