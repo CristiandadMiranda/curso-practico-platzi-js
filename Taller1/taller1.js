@@ -51,14 +51,18 @@ function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, tr
         const trianguloGrandeAltura = trianguloPequenoLadoA;
         return trianguloGrandeAltura;
     }
+    
 }
 
 alturaTrianguloIsosceles();
 
-function areaTriangulo (base, altura) {
+function areaTriangulo (lado1, lado2, base) {
+
+    const  altura =  alturaTrianguloIsosceles(lado1,lado2, base);
+    const area = (base * altura)/2;
 
     
-    return (base * altura)/2;
+    return area;
 
 }  
 
@@ -199,13 +203,16 @@ function calcularAreaCirculo(){
         
         if (valueLado1 === valueLado2 && valueLado1 != valueBase){
             
-            const  altura =  alturaTrianguloIsosceles(valueLado1,valueLado2, valueBase);
-            const area = areaTriangulo(valueBase, altura);
+            
+
+            const area = areaTriangulo(valueLado1, valueLado2, valueBase);
+
             alert(area);
+
 
         } else {
             
-            console.error("error");
+            console.error("Ehhhh no se que me pasa")
 
         }
 
