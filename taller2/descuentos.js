@@ -49,7 +49,7 @@ function buttonPriceDiscount(){
         const total = price - PriceDiscount;
 
         const text = document.getElementById("priceP");
-        text.innerText = `El precio total de el producto en descuento es el de: $${PriceDiscount}
+        text.innerText = `El precio total de el producto sin descuento es el de: $${PriceDiscount}
                           ahorraste en total: $${total}`;
 
     }

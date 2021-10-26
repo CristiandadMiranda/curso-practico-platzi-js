@@ -32,6 +32,8 @@ const lista1 = [
 400
 ];
 
+lista1.sort(comparacion);
+
 function calcularMediana(lista) {
 
     const mitadList = parseInt(lista.length /2);
@@ -45,7 +47,7 @@ function calcularMediana(lista) {
         const elemento2 = lista[mitadList];
         
         const promedio =  calcMediaAritmetica([elemento1, elemento2]);
-    
+        console.log (promedio);
         return mediana = promedio;
     
     
@@ -54,6 +56,9 @@ function calcularMediana(lista) {
     }
 
 }
+
+console.log(lista1);
+console.log(calcularMediana(lista1));
 // teniendo en cuenta que estamos leyendo de forma
 //  resta =  a  -  b  ;
 let resta = 800 - 100 ;
